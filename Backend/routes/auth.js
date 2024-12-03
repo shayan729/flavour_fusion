@@ -5,6 +5,22 @@ import User from '../models/User.js'; // Note the .js extension
 
 const router = express.Router();
 
+export const verifyToken = (req, res, next) => {
+  const token = req.headers.authorization?.split(' ')[1]; // Expecting 'Bearer <token>'
+
+  if (!token) {
+    return res.status(401).json({ message: 'No token provided' });
+  }
+
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    req.userId = decoded.userId; // Attach userId to the request
+    next();
+  } catch (error) {
+    return res.status(403).json({ message: 'Invalid token' });
+  }
+};
+
 // Registration endpoint
 router.post('/register', async (req, res) => {
   const { username, email, password } = req.body;

@@ -41,7 +41,7 @@ function Navbar() {
         </div>
       </div>
       <div className="links flex gap-10">
-        {["Home","Recipes", "Meal Planner", "About Us", "Contact","Login"].map((item, index) => (
+        {["Home","Recipes", "Meal Planner", "Smart Bites","About Us", "Contact","Login"].map((item, index) => (
           <Link 
             key={index} 
             to={item === "Home" ? "/" : `/${item.toLowerCase().replace(/\s+/g, '')}`} 

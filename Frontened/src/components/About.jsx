@@ -16,7 +16,7 @@ const About = () => {
 </h1>
 
       </div>
-      <div className="grid grid-cols-2 gap-8 py-6 container border-t border-[#99ad53] mb-28">
+      <div className="grid grid-cols-2 gap-8 py-6 container border-t border-[#99ad53] mb-28 ">
         <p>What can we expect: </p>
         <div className="flex flex-col gap-7 max-w-[25rem] leading-[1.4] ">
           <p>

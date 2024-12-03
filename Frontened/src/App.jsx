@@ -7,13 +7,14 @@ import RecipeDetails from './pages/RecipeDetails'
 import Register from './pages/Register'
 import Login from "./pages/Login"
 import FavoritesPage from './pages/FavoritesPage';
+import SmartBites from './pages/SmartBites'
 
 
 
 function App() {
   return (
     <>
-        <Router>
+    <Router>
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/recipes" element={<RecipePage />} />
@@ -22,6 +23,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/favorites" element={<FavoritesPage />} />
+        <Route path='/smartbites' element={<SmartBites />}></Route>
       </Routes>
     </Router>
 

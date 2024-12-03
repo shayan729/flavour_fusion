@@ -18,7 +18,7 @@ const RecipePage = () => {
 
   useEffect(() => {
     const fetchRecipes = async () => {
-      const apiKey = "8ba975d8204348528eb0eeec9b5445b4";
+      const apiKey = "2dd69af55c384fc093537f2dc2d16595";
       try {
         const response = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&number=12&offset=${(page - 1) * 12}`);
         const data = await response.json();

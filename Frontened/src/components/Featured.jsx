@@ -18,7 +18,7 @@ function Feature() {
 	return (
 		<div className="w-full py-20 bg-zinc-900">
 			<div className="px-20">
-            <h1 className='text-7xl font-["Neue_Montreal"] tracking-tight'>Featured Project</h1>
+            <h1 className='text-7xl font-["Neue Montreal"] tracking-tight'>Featured Project</h1>
 				<div className="card w-full flex gap-10 mt-10">
 					<motion.div
 						onHoverStart={() => handleHover(0)}
