@@ -31,7 +31,7 @@ const About = () => {
         <div className="flex-1 flex flex-col gap-5">
           <h2 className="text-[52px] font-normal">Our Approach: </h2>
           <a href="/" className="inline-flex items-center gap-7 w-[11vw] bg-[#212121] text-white py-4 px-6 uppercase rounded-[30px] text-[14px] cursor-pointer transition-colors duration-300 hover:bg-white hover:text-black">
-            <span ' >Read more</span>
+            <span >Read more</span>
             <GoArrowUpRight className="relative text-[1rem]" />
           </a>
         </div>
